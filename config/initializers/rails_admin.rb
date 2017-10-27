@@ -3,12 +3,20 @@ RailsAdmin.config do |config|
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
-    new
-    export
+    new do
+      except ['Contact']
+    end
+    export do
+      except ['Contact']
+    end
     bulk_delete
     show
-    edit
-    delete
+    edit do
+      except ['Contact']
+    end
+    delete do
+      except ['Contact']
+    end
     show_in_app
   end
   
