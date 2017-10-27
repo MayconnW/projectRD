@@ -2,7 +2,7 @@ RailsAdmin.config do |config|
 
   config.actions do
     dashboard                     # mandatory
-    index                         # mandatory
+    index
     new do
       except ['Contact']
     end
