@@ -1,7 +1,7 @@
 class Track < ApplicationRecord
   
   RailsAdmin.config do |config|
-    config.model 'Role' do
+    config.model 'Track' do
       visible false
     end
   end

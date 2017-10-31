@@ -1,3 +1,5 @@
+require Rails.root.join('lib', 'rails_admin', 'track_list.rb')
+RailsAdmin::Config::Actions.register(RailsAdmin::Config::Actions::TrackList)
 RailsAdmin.config do |config|
 
   config.actions do
@@ -10,7 +12,9 @@ RailsAdmin.config do |config|
       except ['Contact']
     end
     bulk_delete
-    show
+    show do
+      except ['Contact']
+    end
     edit do
       except ['Contact']
     end
@@ -18,6 +22,7 @@ RailsAdmin.config do |config|
       except ['Contact']
     end
     show_in_app
+    track_list
   end
   
   config.authorize_with :pundit

@@ -71,6 +71,8 @@ class ApplicationPolicy
         user.role.admin
       when :show_in_app
         user.role.admin
+      when :track_list
+        user.role.admin
       else
         raise ::Pundit::NotDefinedError, "unable to find policy #{action} for #{record}."
     end

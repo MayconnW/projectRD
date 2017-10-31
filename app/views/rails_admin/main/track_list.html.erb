@@ -1,0 +1,58 @@
+
+<div>
+  
+  <div class="track-content">
+    
+    <div class="fieldset">
+      <dl>
+        <dt class="track-title">
+          <span class="label label-info notice_field string_type">Email</span>
+        </dt>
+        <dd class="well">
+            <div class="track-answer"><%= @object.email %> </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt class="track-title">
+          <span class="label label-info notice_field string_type">Cookie</span>
+        </dt>
+        <dd class="well">
+            <div class="track-answer"><%= @object.cookie %> </div>
+        </dd>
+      </dl>
+      
+      <dl>
+        <dt class="track-title">
+          <span class="label label-info notice_field string_type">Acessos</span>
+        </dt>
+        <dd class="well">
+            <div class="track-answer">
+              <table class="table table-striped">
+              <thead class="thead-inverse">
+                <tr>
+                  <th>ID</th>
+                  <th>URL Acessada</th>
+                  <th>Data e Hora</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @object.tracks.each do |track| %>
+                  <tr>
+                    <th scope="row"><%= track.id %></th>
+                    <td><%= track.url %></td>
+                    <td><%= track.created_at.strftime("%d/%m/%Y %H:%M:%S")%></td>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
+            </div>
+        </dd>
+      </dl>
+    </div>
+  </div>
+  
+  <br style="clear: left;" />
+  
+</div>
+ 

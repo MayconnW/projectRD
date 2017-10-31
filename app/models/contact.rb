@@ -11,7 +11,12 @@ class Contact < ApplicationRecord
         field :id do
           column_width 100
         end
-        field :email 
+        field :email do
+          formatted_value do
+            path = bindings[:view].track_list_path(model_name: 'Contact', id: bindings[:object].id)
+            bindings[:view].link_to(bindings[:object].email, path)
+          end
+        end
       end
     end
   end
