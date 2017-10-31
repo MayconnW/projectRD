@@ -31,3 +31,9 @@
 
 en:
   hello: "Hello world"
+  admin:
+    actions:
+      track_list:
+        menu: 'Rastreamento de Usuários'
+        title: 'Rastreio'
+        breadcrumb: 'Informações do usuário e links acessados'
