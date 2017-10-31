@@ -10,9 +10,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
+There is a JS Library to use with this project. It is simple to use, just add the library to your project, on every page that you wish to track. There is a function in this file that shows how to send the contact to identify this user later. Just access the link and you can see more information about how to use the library.
+
 https://github.com/MayconnW/track_js
-There is a JS Library to use with this project. It is simple to use, just add the library to your project, on every page that you wish to track. There is a function in this file that shows how to send the contact to identify this user later.
-Just access the link and you can see more information about how to use the library.
+
 
 ### Installing
 
@@ -60,5 +61,5 @@ https://devcenter.heroku.com/articles/getting-started-with-rails5
 
 ## Authors
 
-* **Mayconn Willian** - *Initial work* - [PurpleBooth](https://github.com/mayconnw)
+* **Mayconn Willian** - *Initial work* - (https://github.com/mayconnw)
 
